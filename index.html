@@ -7,7 +7,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="game-board">
+    <h1 id="header">Tick Tac Toe</h1>
+    <p>Click the play button, and click on any of the box to get started.<br> Your objective is to get X's in a row either horizontally, vertically or diagonally.</p>
+    <div class="buttonset">
+      <button id="play" type="button" name="button" onclick="startGame()">Play</button>
+      <button id="reset" type="button" name="button" onclick="resetGame()">Reset</button>
+    </div>
+    <div id="game-board"class="game-board">
+
       <table>
         <tbody>
           <tr id="row1">
@@ -20,7 +27,7 @@
             <td id="row2cell2" onclick="mark(this.id)"></td>
             <td id="row2cell3" onclick="mark(this.id)"></td>
           </tr>
-          <tr id="row2">
+          <tr id="row3">
             <td id="row3cell1" onclick="mark(this.id)"></td>
             <td id="row3cell2" onclick="mark(this.id)"></td>
             <td id="row3cell3" onclick="mark(this.id)"></td>
@@ -30,7 +37,6 @@
 
     </div>
     <script type="text/javascript" src="index.js">
-
     </script>
   </body>
 </html>
